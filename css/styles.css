@@ -14,20 +14,8 @@
 *::before,
 *::after {
 	box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
 	margin: 0;
+	padding: 0;
 }
 
 img {
@@ -35,209 +23,121 @@ img {
 }
 
 body {
-	font-size: 0.9375rem;
+	font-size: 15px;
 	background-color: var(--neutral-crl--light-gray);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.container {
+	padding-top: 7%;
+	margin: 0 auto;
+}
+
+.card__1 {
+	background-color: var(--primary-crl--orange);
+	border-radius: 10px 10px 0 0;
+}
+
+.card__2 {
+	background-color: var(--primary-crl--cyan);
+}
+
+.card__3 {
+	background-color: var(--primary-crl--dark-cyan);
+	border-radius: 0 0 10px 10px;
+}
+
+.card__header {
+	color: var(--neutral-crl--light-gray);
+	font-size: 2.6em;
+	font-family: var(--ff-secondary);
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0 15% 10%;
+}
+
+.card__paragraph {
+	color: var(--neutral-crl--white);
+	line-height: 1.6;
+	font-family: var(--ff-primary);
+	font-weight: 400;
+	margin: 0 9% 7% 15%;
+}
+
+.card {
+	width: 100%;
+	max-width: 310px;
+	display: flex;
+	flex-direction: column;
+}
+
+.card__img {
+	width: 19%;
+	margin: 14% 15% 7%;
+}
+
+/* Button */
+
+.btn {
+	background-color: var(--neutral-crl--light-gray);
+	display: inline-block;
+	width: 40%;
+	text-decoration: none;
+	text-align: center;
+	padding: 1em 0.5em;
+	border-radius: 100px;
+	margin: auto 0 15% 15%;
 }
 
 .sedan__btn {
-	display: inline-block;
 	color: var(--primary-crl--orange);
-	background-color: var(--neutral-crl--light-gray);
-	text-decoration: none;
-	padding: .75em 2em;
-	border-radius: 100px;
 }
 
 .suv__btn {
-	display: inline-block;
 	color: var(--primary-crl--cyan);
-	background-color: var(--neutral-crl--light-gray);
-	text-decoration: none;
-	padding: .75em 2em;
-	border-radius: 100px;
 }
 
 .luxury__btn {
-	display: inline-block;
 	color: var(--primary-crl--dark-cyan);
-	background-color: var(--neutral-crl--light-gray);
-	text-decoration: none;
-	padding: .75em 2em;
-	border-radius: 100px;
 }
 
-.sedan__header,
-.suv__header,
-.luxury__header {
+.btn:hover,
+.btn:focus {
+	background-color: transparent;
+	border: 2px solid #fff;
 	color: var(--neutral-crl--light-gray);
-	font-family: var(--ff-secondary);
-	text-transform: uppercase;
-	font-size: 2.5rem;
-	margin-bottom: 0.6em;
+	transition: background-color 400ms ease-in-out;
 }
 
-.sedan__paragraph,
-.suv__paragraph,
-.luxury__paragraph {
-	color: var(--neutral-crl--white);
-	font-family: var(--ff-primary);
-	line-height: 1.5;
-	width: 100%;
-	margin-bottom: 1.5em;
-}
+/* Attribution */
 
 .attribution {
-	margin-top: 1em;
 	font-size: 0.7333333333333333rem;
 	text-align: center;
+	margin-top: 10px;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
 	text-decoration: none;
 }
 
-.container {
-	width: 80%;
-	margin: 0 auto;
-	max-width: 375px;
-}
-
-.main {
-	margin-top: 3em;
-}
-
-.flex {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.flex__body {
-	display: flex;
-	flex-direction: column;
-}
-
-.sedan {
-	width: 85%;
-	max-width: 375px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	background-color: var(--primary-crl--orange);
-	padding: 3em 1em;
-}
-
-.suv {
-	width: 85%;
-	max-width: 375px;
-	background-color: var(--primary-crl--cyan);
-	padding: 3em 1em;
-}
-
-.luxury {
-	width: 85%;
-	max-width: 375px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	background-color: var(--primary-crl--dark-cyan);
-	padding: 3em 1em;
-}
-
-.sedan__img,
-.suv__img,
-.luxury__img {
-	width: 28%;
-	margin-bottom: 1.8em;
-}
-
-.sedan__btn:hover,
-.sedan__btn:focus {
-	background-color: var(--primary-crl--orange);
-	color: var(--neutral-crl--light-gray);
-	border: 2px solid var(--neutral-crl--light-gray);
-	transition: background-color 400ms ease-in-out;
-}
-
-.suv__btn:hover,
-.suv__btn:focus {
-	background-color: var(--primary-crl--cyan);
-	color: var(--neutral-crl--light-gray);
-	border: 2px solid var(--neutral-crl--light-gray);
-	transition: background-color 400ms ease-in-out;
-}
-
-.luxury__btn:hover,
-.luxury__btn:focus {
-	background-color: var(--primary-crl--dark-cyan);
-	color: var(--neutral-crl--light-gray);
-	border: 2px solid var(--neutral-crl--light-gray);
-	transition: background-color 400ms ease-in-out;
-}
-
 @media (min-width: 800px) {
-	.flex {
-		flex-direction: row;
+	.container {
+		display: flex;
 	}
 
-	.main {
-		margin-top: 6em;
+	.card__1 {
+		border-radius: 10px 0 0 10px;
 	}
 
-	.sedan {
-		width: 22%;
-		min-width: 230px;
-		height: 480px;
-		border-top-right-radius: 0;
-		border-bottom-left-radius: 10px;
-		position: relative;
+	.card__3 {
+		border-radius: 0 10px 10px 0;
 	}
 
-	.suv {
-		width: 22%;
-		min-width: 230px;
-		height: 480px;
-		position: relative;
-	}
-
-	.luxury {
-		width: 22%;
-		min-width: 230px;
-		height: 480px;
-		border-bottom-left-radius: 0;
-		border-top-right-radius: 10px;
-		position: relative;
-	}
-
-	.sedan__paragraph {
-		max-width: 89%;
-		margin: 0;
-		line-height: 1.7;
-	}
-
-	.suv__paragraph {
-		max-width: 93%;
-		margin: 0;
-		line-height: 1.7;
-	}
-
-	.luxury__paragraph {
-		max-width: 93%;
-		margin: 0;
-		line-height: 1.7;
-	}
-
-	.sedan__btn {
-		position: absolute;
-		bottom: 9%;
-	}
-
-	.suv__btn {
-		position: absolute;
-		bottom: 9%;
-	}
-
-	.luxury__btn {
-		position: absolute;
-		bottom: 9%;
+	.card__paragraph {
+		margin-right: 17%;
+		margin-bottom: 26%;
 	}
 }
