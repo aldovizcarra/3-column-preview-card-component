@@ -1,16 +1,16 @@
 :root {
-	--primary-crl--orange: hsl(31, 77%, 52%);
-	--primary-crl--cyan: hsl(184, 100%, 22%);
-	--primary-crl--dark-cyan: hsl(179, 100%, 13%);
+  --primary-crl--orange: hsl(31, 77%, 52%);
+  --primary-crl--cyan: hsl(184, 100%, 22%);
+  --primary-crl--dark-cyan: hsl(179, 100%, 13%);
 
-	--neutral-crl--white: hsla(0, 0%, 100%, 0.75);
-	--neutral-crl--light-gray: hsl(0, 0%, 95%);
+  --neutral-crl--white: hsla(0, 0%, 100%, 0.75);
+  --neutral-crl--light-gray: hsl(0, 0%, 95%);
 
-	--ff-primary: 'Lexend Deca', sans-serif;
-	--ff-secondary: 'Big Shoulders Display', cursive;
+  --ff-primary: "Lexend Deca", sans-serif;
+  --ff-secondary: "Big Shoulders Display", cursive;
 }
 
-*,
+/* *,
 *::before,
 *::after {
 	box-sizing: border-box;
@@ -78,7 +78,6 @@ body {
 	margin: 14% 15% 7%;
 }
 
-/* Button */
 
 .btn {
 	background-color: var(--neutral-crl--light-gray);
@@ -111,7 +110,7 @@ body {
 	transition: background-color 400ms ease-in-out;
 }
 
-/* Attribution */
+
 
 .attribution {
 	font-size: 0.7333333333333333rem;
@@ -140,4 +139,4 @@ body {
 		margin-right: 17%;
 		margin-bottom: 26%;
 	}
-}
+} */
