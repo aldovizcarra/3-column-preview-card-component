@@ -64,6 +64,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 8px;
 }
 
@@ -130,6 +131,24 @@ body {
 
 .btn__end {
   color: var(--primary-crl--dark-cyan);
+}
+
+@media (min-width: 916px) {
+  .card {
+    max-width: 307px;
+  }
+
+  .card__container {
+    display: flex;
+  }
+
+  .card__start {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .card__end {
+    border-radius: 0 8px 8px 0;
+  }
 }
 
 /* *,
