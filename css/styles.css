@@ -142,6 +142,7 @@ body {
 .btn:focus {
   background-color: transparent;
   color: #fff;
+  transition: background-color 300ms ease-in-out;
 }
 
 .btn__start {
