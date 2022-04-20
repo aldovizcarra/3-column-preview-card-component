@@ -1,6 +1,6 @@
 # Frontend Mentor - 3-column preview card component solution
 
-This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](images/3-column-preview-card.png)
+![](images/3-column-preview-card-screenshot.png)
 
 ### Links
 
@@ -67,4 +67,3 @@ I want to continue learning css and start learning javascript.
 ## Acknowledgments
 
 Thanks to the people on the Kevin Powell discord server.
-
